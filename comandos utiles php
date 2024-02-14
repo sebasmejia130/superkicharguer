@@ -1,6 +1,0 @@
-
-
-Un array puede ser creado con el constructor del lenguaje array(). | parejas clave => valor
-Para quitar una pareja clave/valor, se debe llamar a la función unset() con éste.
-// Re-indexar:
-$array = array_values($array);
