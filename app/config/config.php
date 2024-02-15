@@ -18,8 +18,18 @@
                     'fin'=>'resources/assets/vs.gif',
                     'ganador'=>'resources/assets/gokuwin.gif',
                 ],
+            ],
+            'bills'=>[
+                'nombre'=>'bills',
+                'assets'=>[
+                    'inicio'=>'resources/assets/goku1.png',
+                    'juego'=>'resources/assets/gokuentreno.gif',
+                    'fin'=>'resources/assets/vs.gif',
+                    'ganador'=>'resources/assets/gokuwin.gif',
+                ],
             ]
             ],
-        'TIME_RESTART'=>30,
+        'TIME_RESTART'=>60,
+        'TITULO'=>'SUPER KI - CHARGER!',
     ]);
 ?>

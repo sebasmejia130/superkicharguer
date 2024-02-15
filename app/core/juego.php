@@ -14,18 +14,18 @@
             
         }
 
-        function jugadorActualKey(){
+        public function jugadorActualKey(){
             return $this->jugador_actual_key;
         }
 
-        function jugadorActual(){
+        public function jugadorActual(){
             return $this->jugadores[$this->jugador_actual_key];
         }
 
-        private function guardarJugadores()
-        {
-            foreach($this->jugadores as $jugador) $jugador->save();
-        }
+        // private function guardarJugadores()
+        // {
+        //     foreach($this->jugadores as $jugador) $jugador->save();
+        // }
         private function resetJugadores()
         {
             foreach($this->jugadores as $jugador) $jugador->reset();
@@ -60,8 +60,7 @@
             }  
             
             $jugador_actual->aumentarPuntaje();
-
-            $this->guardarJugadores();
+            $jugador_actual->save();
             
             if ($jugador_actual->getPuntaje() >= self::MAX_POINT+9 && $this->jugador_actual_key==1) { 
                 setcookie('jugador_actual', 0, time() + CONFIG['TIME_RESTART']);

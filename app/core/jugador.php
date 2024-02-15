@@ -1,18 +1,17 @@
 <?php
     namespace app\core;
     class jugador{
-        public const TIME_RESTART = 30;
         private $tiempo_inicial=null;
         private $tiempo_final=null;
         private $puntaje=-1;
         private $nombre;
         private $assets;
-        private $cookie_key;
-
-        public function __construct($config,$cookie_key=null) {
+        
+        public function __construct($config,
+        private $cookie_key) {
             $this->nombre=$config['nombre'];
             $this->assets=$config['assets'];
-            $this->cookie_key=$cookie_key??$this->nombre;
+            
             if (isset($_COOKIE[$this->cookie_key])) {
                 $this->loadData();
             }else{

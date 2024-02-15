@@ -1,0 +1,25 @@
+.cajon {
+    padding: 2px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+}
+
+.cajon img{
+    max-width: 100%;
+}
+
+.puntaje {
+    padding: 5px;
+    font-weight: bold;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 100%;
+    text-align: center;
+    width: 50px;
+    width: 50px;
+}
